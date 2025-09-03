@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: delta-spike-notifier
     env: python
     plan: free
