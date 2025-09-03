@@ -191,6 +191,11 @@ def on_message(ws, raw):
     mtype = msg.get("type")
     symbol = msg.get("symbol")
     if mtype and mtype.startswith("candlestick_") and symbol:
+        # Check if all required fields are present and not None
+        required_fields = ["open", "high", "low", "close"]
+        if not all(msg.get(field) is not None for field in required_fields):
+            return  # Skip this message if any required field is None
+        
         candle = {
             "open": float(msg["open"]),
             "high": float(msg["high"]),
