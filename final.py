@@ -56,14 +56,9 @@ WEIGHTS = {
 # ---------------------------
 # Telegram Bot
 # ---------------------------
-TELEGRAM_BOT_TOKEN = "8256148964:AAGtAwiEcLIRMkiLOmPHimWGTBdzmGQOUTc"
-TELEGRAM_CHAT_ID = "630658837"
 
-# ---------------------------
-# Delta API creds
-# ---------------------------
-API_KEY = "cgCYh2dZfpozKKTkeBygVpuZsoELlD"
-API_SECRET = "RCWft2ptKL6kKRuY7Az8dZvdCB6TGg6O6IMreRRzUe7VACCmWXC2hlcy4BOP"
+# add token here
+# add chat id here
 
 # ---------------------------
 # State
